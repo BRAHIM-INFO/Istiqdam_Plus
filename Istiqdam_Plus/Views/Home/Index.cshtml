@@ -1,0 +1,61 @@
+﻿@{
+    ViewData["Title"] = "لوحة التحكم";
+}
+
+<div class="bg-teal-600 rounded-[32px] p-10 text-white shadow-2xl mb-8 relative overflow-hidden">
+    <h1 class="text-4xl font-bold mb-2">مرحباً، مستخدم 👋</h1>
+    <p class="text-teal-50 opacity-90">أهلاً بك في نظام استقدام بلس لإدارة العمالة.</p>
+</div>
+
+<div class="bg-white p-4 rounded-[24px] shadow-lg flex items-center mb-10 border border-gray-100">
+    <span class="px-4 text-2xl">🔍</span>
+    <input type="text" placeholder="البحث السريع عن موظف..." class="w-full p-3 outline-none text-lg">
+    <button class="bg-teal-600 text-white px-8 py-4 rounded-[20px] font-bold">بحث</button>
+</div>
+
+<div class="grid grid-cols-6 gap-4 mb-8">
+    @for (int i = 0; i < 6; i++)
+    {
+        <div class="bg-white p-6 rounded-[24px] shadow-sm border border-gray-100 text-center">
+            <div class="text-2xl mb-2">🏆</div>
+            <h2 class="text-3xl font-bold">0</h2>
+            <p class="text-gray-500 text-sm">إجمالي الموظفين</p>
+        </div>
+    }
+</div>
+
+<div class="grid grid-cols-4 gap-4">
+    <button class="bg-white p-6 rounded-[24px] shadow-sm border border-gray-100 flex flex-col items-center hover:bg-gray-50 transition">
+        <span class="text-3xl mb-2">➕</span> إضافة موظف جديد
+    </button>
+</div>
+
+@* @{
+    ViewData["Title"] = "الرئيسية";
+}
+
+<div class="relative bg-teal-600 rounded-[32px] p-10 text-white shadow-xl mb-8 overflow-hidden">
+    <div class="relative z-10">
+        <h1 class="text-4xl font-bold mb-3">مرحباً، مستخدم 👋</h1>
+        <p class="text-teal-50 text-lg opacity-90">أهلاً بك في نظام استقدام بلس، نظامك الذكي لإدارة العمالة.</p>
+    </div>
+    <div class="absolute -top-10 -right-10 w-64 h-64 bg-white/10 rounded-full"></div>
+</div>
+
+<div class="bg-white p-3 rounded-[28px] shadow-lg border border-gray-100 flex items-center mb-8">
+    <div class="p-4 text-gray-400 text-xl">🔍</div>
+    <input type="text"
+           placeholder="ابحث بالاسم أو الرقم الوظيفي أو رقم الهاتف..."
+           class="w-full p-4 outline-none text-lg text-gray-700 placeholder:text-gray-400">
+    <button class="bg-teal-600 hover:bg-teal-700 text-white px-10 py-4 rounded-[20px] font-bold transition-all shadow-md">
+        بحث
+    </button>
+</div>
+
+<div class="bg-teal-50 border border-teal-100 p-6 rounded-[24px] flex items-center gap-4">
+    <div class="text-3xl">🛡️</div>
+    <div>
+        <h3 class="font-bold text-teal-900">بياناتك محفوظة محلياً</h3>
+        <p class="text-teal-700 text-sm">جميع البيانات مخزنة في جهازك فقط - لا سيرفر، لا سحابة، خصوصية تامة.</p>
+    </div>
+</div> *@

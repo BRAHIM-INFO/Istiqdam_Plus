@@ -1,0 +1,216 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Istiqdam_Plus | لوحة التحكم</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-[#f8f9fa]">
+
+    <div class="flex h-screen overflow-hidden">
+        <aside id="sidebar" class="w-72 bg-[#00695c] text-white p-6 transition-all duration-300 ease-in-out flex flex-col h-screen">
+
+            <div class="flex items-center justify-between mb-10">
+                <div class="flex items-center gap-3">
+                    <img src="~/images/LOGO.png" class="w-12 h-12 rounded-xl border border-white/20" alt="Logo">
+                    <h2 class="font-bold text-lg nav-text">ISTIQDAM_PLUS</h2>
+                </div>
+                <button id="toggleBtn" class="p-2 bg-white/10 rounded-lg hover:bg-white/20 transition">☰</button>
+            </div>
+
+           @*  <button id="toggleBtn" class="mb-8 p-2 bg-white/10 rounded-lg w-full hover:bg-white/20 transition">☰</button>
+
+            <div class="mb-10 text-center">
+                <img src="~/images/LOGO.png" class="w-20 h-20 mx-auto rounded-2xl border-2 border-white/20" alt="Logo">
+                <h2 class="mt-4 font-bold text-lg nav-text">ISTIQDAM_PLUS</h2>
+            </div> *@
+
+            <nav class="space-y-2 flex-1 overflow-y-auto">
+
+                <a href="/" class="flex items-center p-4 bg-white/20 rounded-2xl font-bold text-white">
+                     <svg class="w-6 h-6 ml-3" fill="none" stroke="white" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"></path></svg>
+                     <span class="nav-text">لوحة التحكم</span>
+                </a>
+               
+                <a href="#" class="flex items-center p-4 text-white/80 hover:bg-white/5 rounded-2xl transition">
+                    <svg class="w-6 h-6 ml-3" fill="none" stroke="white" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+                    <span class="nav-text">الاستقدام</span>
+                </a>
+               
+                <a href="#" class="flex items-center p-4 text-white/80 hover:bg-white/5 rounded-2xl transition">
+                    <svg class="w-6 h-6 ml-3" fill="none" stroke="white" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                    <span class="nav-text">الاعلام</span>
+                </a>
+
+                <a href="#" class="flex items-center p-4 text-white/70 hover:bg-white/5 rounded-2xl transition">
+                    <span class="ml-3">💰</span> <span class="nav-text">المبيعات</span>
+                </a>
+
+                <a href="#" class="flex items-center p-4 text-white/80 hover:bg-white/5 rounded-2xl transition">
+                    <svg class="w-6 h-6 ml-3" fill="none" stroke="white" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                    <span class="nav-text">المخولين</span>
+                </a>
+
+
+                <a href="#" class="flex items-center p-4 text-white/70 hover:bg-white/5 rounded-2xl transition">
+                    <span class="ml-3">🏢</span> <span class="nav-text">بيانات المركز</span>
+                </a>
+                <a href="#" class="flex items-center p-4 text-white/70 hover:bg-white/5 rounded-2xl transition">
+                    <span class="ml-3">💾</span> <span class="nav-text">النسخ الاحتياطي</span>
+                </a>
+                <a href="#" class="flex items-center p-4 text-white/70 hover:bg-white/5 rounded-2xl transition">
+                    <span class="ml-3">📞</span> <span class="nav-text">التواصل والدعم</span>
+                </a>
+            </nav>
+
+            <div class="mt-auto pt-6 border-t border-white/10">
+                <a href="#" class="flex items-center p-4 bg-white/5 hover:bg-white/10 rounded-2xl transition font-bold">
+                    <span class="ml-3">👤</span> <span class="nav-text">إدارة المستخدمين</span>
+                </a>
+            </div>
+        </aside>
+
+        <main class="flex-1 flex flex-col overflow-hidden">
+            <header class="h-20 bg-white border-b border-gray-100 flex items-center justify-between px-10 shadow-sm">
+                <div class="text-gray-500 text-sm">نظام مكاتب استقدام عمالة اجنبية - استقدام بلس</div>
+                <div class="flex gap-4">
+                    <span class="bg-gray-100 px-4 py-2 rounded-xl text-sm">@DateTime.Now.ToString("dddd, dd MMMM yyyy")</span>
+                    <span class="bg-teal-50 text-teal-700 px-4 py-2 rounded-xl text-sm font-bold">@DateTime.Now.ToString("hh:mm tt")</span>
+                </div>
+            </header>
+
+            <div class="flex-1 p-10 overflow-y-auto">
+                @RenderBody()
+            </div>
+        </main>
+    </div>
+
+    <script>
+        const sidebar = document.getElementById('sidebar');
+        const toggleBtn = document.getElementById('toggleBtn');
+        const navTexts = document.querySelectorAll('.nav-text');
+
+        toggleBtn.addEventListener('click', () => {
+            sidebar.classList.toggle('w-72');
+            sidebar.classList.toggle('w-25');
+            navTexts.forEach(el => el.classList.toggle('hidden'));
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+@* <!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Istiqdam_Plus | لوحة التحكم</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;400;700&display=swap" rel="stylesheet">
+
+    <script>
+        const sidebar = document.getElementById('sidebar');
+        const toggleBtn = document.getElementById('toggleBtn');
+
+        toggleBtn.addEventListener('click', () => {
+            sidebar.classList.toggle('w-72'); // العرض الكامل
+            sidebar.classList.toggle('w-20');  // العرض المختصر
+
+            // إخفاء/إظهار النصوص عند الغلق
+            document.querySelectorAll('.nav-text').forEach(el => el.classList.toggle('hidden'));
+        });
+    </script>
+
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-[#f8f9fa]">
+
+    <div class="flex h-screen overflow-hidden">
+        <aside id="sidebar" class="w-72 bg-[#00695c] text-white p-6 transition-all duration-300 ease-in-out flex flex-col h-screen">
+
+            <button id="toggleBtn" class="mb-8 p-2 bg-white/10 rounded-lg w-full">☰</button>
+
+            <div class="mb-10 text-center">
+                <img src="~/images/LOGO.png" class="w-20 h-20 mx-auto rounded-2xl border-2 border-white/20" alt="Logo">
+                <h2 class="mt-4 font-bold text-lg">ISTIQDAM_PLUS</h2>
+            </div>
+             
+             
+            <nav class="space-y-4 flex-1">
+                <a href="/" class="flex items-center p-4 bg-white/20 rounded-2xl font-bold">
+                    <svg class="w-6 h-6 ml-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"></path></svg>
+                    لوحة التحكم
+                </a>
+
+                <a href="#" class="flex items-center p-4 text-white/70 hover:text-white transition">
+                    <svg class="w-6 h-6 ml-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+                    الموظفون
+                </a>
+
+                <a href="#" class="flex items-center p-4 text-white/70 hover:text-white transition">
+                    <svg class="w-6 h-6 ml-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                    ادارة العقود
+                </a>
+
+                <a href="#" class="flex items-center p-4 text-white/70 hover:text-white transition">
+                    <svg class="w-6 h-6 ml-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                    ادارة الحسابات
+                </a> 
+
+                <a href="#" class="flex items-center p-4 text-white/70 hover:text-white transition">
+                    <svg class="w-6 h-6 ml-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                    التقارير
+                </a>
+            </nav> 
+            <nav class="space-y-3 flex-1">
+                <a href="/" class="flex items-center p-4 bg-white/10 rounded-2xl transition">📊 لوحة التحكم</a>
+                <a href="#" class="flex items-center p-4 hover:bg-white/5 rounded-2xl transition">🏢 بيانات المركز</a>
+                <a href="#" class="flex items-center p-4 hover:bg-white/5 rounded-2xl transition">💾 النسخ الاحتياطي</a>
+                <a href="#" class="flex items-center p-4 hover:bg-white/5 rounded-2xl transition">📞 التواصل والدعم</a>
+            </nav>
+
+            <div class="mt-auto pt-6 border-t border-white/10">
+                <a href="#" class="flex items-center p-4 bg-white/5 hover:bg-white/10 rounded-2xl transition font-bold">
+                    <span class="ml-3">👤</span> إدارة المستخدمين
+                </a>
+            </div>
+        </aside>
+
+        <main class="flex-1 flex flex-col overflow-hidden">
+            <header class="h-20 bg-white border-b border-gray-100 flex items-center justify-between px-10">
+                <div class="text-gray-500 text-sm">نظام مكاتب استقدام عمالة اجنبية - استقدام بلس</div>
+                <div class="flex gap-4">
+                    <span class="bg-gray-100 px-4 py-2 rounded-xl text-sm">@DateTime.Now.ToString("dddd, dd MMMM yyyy")</span>
+                    <span class="bg-teal-50 text-teal-700 px-4 py-2 rounded-xl text-sm font-bold">@DateTime.Now.ToString("hh:mm tt")</span>
+                </div>
+            </header>
+
+            <div class="flex-1 p-10 overflow-y-auto">
+                @RenderBody()
+            </div>
+        </main> 
+    </div>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
+
+ *@
