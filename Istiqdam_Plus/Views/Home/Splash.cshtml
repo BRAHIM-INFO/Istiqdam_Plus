@@ -38,10 +38,15 @@
             const progress = document.getElementById('progress');
             progress.style.width = '100%';
 
+                   // في ملف Splash.cshtml
+           setTimeout(() => {
+               window.location.href = '@Url.Action("Login", "Account")';
+           }, 3200);
+
             // الانتقال بعد انتهاء التحميل (3 ثوانٍ)
-            setTimeout(() => {
-                    window.location.href = '@Url.Action("Index", "Home")'; // تأكد أنه يذهب لصفحة المحتوى الرئيسية
-              }, 4200); 
+            // setTimeout(() => {
+            //         window.location.href = '@Url.Action("Index", "Home")'; // تأكد أنه يذهب لصفحة المحتوى الرئيسية
+            //   }, 4200); 
         };
     </script>
 </body>
